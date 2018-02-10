@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="BarOrder" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsms.BarController">
+   <children>
+      <Button layoutX="1041.0" layoutY="69.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="58.0" prefWidth="190.0" style="-fx-background-color: #15c520;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="254.0" fitWidth="275.0" layoutX="47.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Pictures/DesignEvo-Transparent.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="79.0" layoutY="299.0" mnemonicParsing="false" onAction="#New" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #15c520;" text="New" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="81.0" layoutY="370.0" mnemonicParsing="false" onAction="#Print" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #15c520;" text="Print" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="27.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" width="415.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="64.0" layoutX="28.0" layoutY="224.0" stroke="BLACK" strokeType="INSIDE" width="414.0" />
+      <Label layoutX="53.0" layoutY="197.0" prefWidth="108.0" text="Food ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="197.0" prefWidth="108.0" text="Quantity" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="346.0" layoutY="197.0" prefWidth="108.0" text="Amount" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="459.0" layoutY="553.0" stroke="BLACK" strokeType="INSIDE" width="902.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="64.0" layoutX="459.0" layoutY="584.0" stroke="BLACK" strokeType="INSIDE" width="902.0" />
+      <Label layoutX="481.0" layoutY="553.0" text="Customer ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="605.0" layoutY="553.0" text="Payment Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1079.0" layoutY="552.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1223.0" layoutY="552.0" text="Time" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="763.0" layoutY="553.0" text="Amount" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="777.0" layoutY="659.0" mnemonicParsing="false" onAction="#generateOrderBar" prefHeight="37.0" prefWidth="173.0" style="-fx-background-color: #15c520;" text="Generate Order" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="456.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="909.0" />
+      <Text fill="WHITE" layoutX="864.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bar">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#b51f1f" layoutX="462.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soft Drinks">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <Label layoutX="888.0" layoutY="552.0" text="Room Number" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Text fill="#b51f1f" layoutX="632.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Milkshakes">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#b51f1f" layoutX="810.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wine">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#b51f1f" layoutX="941.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hot Drinks">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <Text fill="#b51f1f" layoutX="1129.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beer and Spirits">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Text>
+      <Button layoutX="465.0" layoutY="287.0" mnemonicParsing="false" onAction="#coke" prefHeight="25.0" prefWidth="129.0" text="Coke" />
+      <Button layoutX="465.0" layoutY="319.0" mnemonicParsing="false" onAction="#fanta" prefHeight="25.0" prefWidth="129.0" text="Fanta ( O/B/P)" />
+      <Button layoutX="465.0" layoutY="352.0" mnemonicParsing="false" onAction="#sprite" prefHeight="25.0" prefWidth="129.0" text="Sprite" />
+      <Button layoutX="465.0" layoutY="384.0" mnemonicParsing="false" onAction="#still" prefHeight="25.0" prefWidth="129.0" text="Still Water" />
+      <Button layoutX="465.0" layoutY="417.0" mnemonicParsing="false" onAction="#spark_tonicWater" prefHeight="25.0" prefWidth="129.0" text="Sparkling/ Tonic Water">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button layoutX="465.0" layoutY="449.0" mnemonicParsing="false" onAction="#fruitJuice" prefHeight="25.0" prefWidth="129.0" text="Fruit Juice" />
+      <Button layoutX="465.0" layoutY="482.0" mnemonicParsing="false" onAction="#iceTea" prefHeight="25.0" prefWidth="129.0" text="Ice Tea" />
+      <Button layoutX="465.0" layoutY="514.0" mnemonicParsing="false" onAction="#mocktail" prefHeight="25.0" prefWidth="129.0" text="Mocktail" />
+      <Button layoutX="635.0" layoutY="286.0" mnemonicParsing="false" onAction="#chocolate" prefHeight="25.0" prefWidth="129.0" text="Chocolate" />
+      <Button layoutX="635.0" layoutY="318.0" mnemonicParsing="false" onAction="#strawberry" prefHeight="25.0" prefWidth="129.0" text="Strawberry" />
+      <Button layoutX="635.0" layoutY="351.0" mnemonicParsing="false" onAction="#vanilla" prefHeight="25.0" prefWidth="129.0" text="Vanilla" />
+      <Button layoutX="635.0" layoutY="383.0" mnemonicParsing="false" onAction="#banana" prefHeight="25.0" prefWidth="129.0" text="Banana" />
+      <Button layoutX="635.0" layoutY="416.0" mnemonicParsing="false" onAction="#cookie" prefHeight="25.0" prefWidth="129.0" text="Cookie" />
+      <Button layoutX="635.0" layoutY="448.0" mnemonicParsing="false" onAction="#cherry" prefHeight="25.0" prefWidth="129.0" text="Cherry" />
+      <Button layoutX="785.0" layoutY="287.0" mnemonicParsing="false" onAction="#red" prefHeight="25.0" prefWidth="129.0" text="Red" />
+      <Button layoutX="785.0" layoutY="319.0" mnemonicParsing="false" onAction="#white" prefHeight="25.0" prefWidth="129.0" text="White" />
+      <Button layoutX="785.0" layoutY="352.0" mnemonicParsing="false" onAction="#rose" prefHeight="25.0" prefWidth="129.0" text="Rose" />
+      <Button layoutX="785.0" layoutY="384.0" mnemonicParsing="false" onAction="#mediumWhite" prefHeight="25.0" prefWidth="129.0" text="Medium White" />
+      <Button layoutX="785.0" layoutY="417.0" mnemonicParsing="false" onAction="#sweetWhite" prefHeight="25.0" prefWidth="129.0" text="Sweet White" />
+      <Button layoutX="939.0" layoutY="286.0" mnemonicParsing="false" onAction="#hotChocolate" prefHeight="25.0" prefWidth="129.0" text="Hot Chocolate" />
+      <Button layoutX="939.0" layoutY="318.0" mnemonicParsing="false" onAction="#flavouredTea" prefHeight="25.0" prefWidth="129.0" text="Flavoured Tea" />
+      <Button layoutX="939.0" layoutY="351.0" mnemonicParsing="false" onAction="#latte" prefHeight="25.0" prefWidth="129.0" text="Latte" />
+      <Button layoutX="939.0" layoutY="383.0" mnemonicParsing="false" onAction="#mocha" prefHeight="25.0" prefWidth="129.0" text="Mocha" />
+      <Button layoutX="939.0" layoutY="416.0" mnemonicParsing="false" onAction="#espresso" prefHeight="25.0" prefWidth="129.0" text="Espresso" />
+      <Button layoutX="939.0" layoutY="448.0" mnemonicParsing="false" onAction="#cappuccino" prefHeight="25.0" prefWidth="129.0" text="Cappuccino" />
+      <Button layoutX="939.0" layoutY="480.0" mnemonicParsing="false" onAction="#masalaTea" prefHeight="25.0" prefWidth="129.0" text="Masala Tea" />
+      <Button layoutX="939.0" layoutY="513.0" mnemonicParsing="false" onAction="#todaySpecial" prefHeight="25.0" prefWidth="129.0" text="Today's Special" />
+      <Button layoutX="1097.0" layoutY="286.0" mnemonicParsing="false" onAction="#rum" prefHeight="25.0" prefWidth="129.0" text="Rum" />
+      <Button layoutX="1097.0" layoutY="318.0" mnemonicParsing="false" onAction="#vodka" prefHeight="25.0" prefWidth="129.0" text="Vodka" />
+      <Button layoutX="1097.0" layoutY="351.0" mnemonicParsing="false" onAction="#brandy" prefHeight="25.0" prefWidth="129.0" text="Brandy" />
+      <Button layoutX="1097.0" layoutY="383.0" mnemonicParsing="false" onAction="#tusker" prefHeight="25.0" prefWidth="129.0" text="Tusker" />
+      <Button layoutX="1097.0" layoutY="416.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Martini" />
+      <Button layoutX="1097.0" layoutY="448.0" mnemonicParsing="false" onAction="#safari" prefHeight="25.0" prefWidth="129.0" text="Safari" />
+      <Button layoutX="1097.0" layoutY="480.0" mnemonicParsing="false" onAction="#tequila" prefHeight="25.0" prefWidth="129.0" text="Tequila" />
+      <Button layoutX="1097.0" layoutY="513.0" mnemonicParsing="false" onAction="#guinness" prefHeight="25.0" prefWidth="129.0" text="Guinness" />
+      <Button layoutX="1233.0" layoutY="286.0" mnemonicParsing="false" onAction="#gin" prefHeight="25.0" prefWidth="129.0" text="Gin" />
+      <Button layoutX="1233.0" layoutY="318.0" mnemonicParsing="false" onAction="#cider" prefHeight="25.0" prefWidth="129.0" text="Cider" />
+      <Button layoutX="1233.0" layoutY="351.0" mnemonicParsing="false" onAction="#jimbean" prefHeight="25.0" prefWidth="129.0" text="Jim Bean" />
+      <Button layoutX="1233.0" layoutY="383.0" mnemonicParsing="false" onAction="#efes" prefHeight="25.0" prefWidth="129.0" text="Efes (D/L)" />
+      <Button layoutX="1233.0" layoutY="416.0" mnemonicParsing="false" onAction="#redbull" prefHeight="25.0" prefWidth="129.0" text="Redbull" />
+      <Button layoutX="1233.0" layoutY="448.0" mnemonicParsing="false" onAction="#snapp" prefHeight="25.0" prefWidth="129.0" text="Snapp " />
+      <Button layoutX="1233.0" layoutY="480.0" mnemonicParsing="false" onAction="#turquishLiquor" prefHeight="25.0" prefWidth="129.0" text="Turquish Liquor" />
+      <Button layoutX="1233.0" layoutY="513.0" mnemonicParsing="false" onAction="#cocktail" prefHeight="25.0" prefWidth="129.0" text="Cocktail" />
+      <Button layoutX="605.0" layoutY="69.0" mnemonicParsing="false" onAction="#Back_Bar" prefHeight="58.0" prefWidth="190.0" style="-fx-background-color: #15c520;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="restaurantPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsms.RestaurantController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="4.0" layoutY="11.0" prefHeight="697.0" prefWidth="1921.0">
+         <children>
+            <Button layoutX="1021.0" layoutY="49.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="58.0" prefWidth="190.0" style="-fx-background-color: #15c520;" text="Logout" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="436.0" layoutY="167.0" stroke="BLACK" strokeType="INSIDE" width="934.0" />
+            <Text fill="WHITE" layoutX="762.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Restaurant">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <Button layoutX="150.0" layoutY="350.0" mnemonicParsing="false" onAction="#newRestaurant" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #15c520;" text="New" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="469.0" layoutY="242.0" mnemonicParsing="false" onAction="#porridge" prefHeight="25.0" prefWidth="100.0" text="Porridge" />
+            <Label layoutX="470.0" layoutY="208.0" text="Breakfast" underline="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="467.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Veg Sandwich" />
+            <Button layoutX="468.0" layoutY="310.0" mnemonicParsing="false" onAction="#tunaSandwich" prefHeight="25.0" prefWidth="100.0" text="Tuna Sandwich" />
+            <Label layoutX="760.0" layoutY="210.0" prefHeight="25.0" prefWidth="118.0" text="Lunch &amp; Dinner" underline="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="468.0" layoutY="347.0" mnemonicParsing="false" onAction="#waffles" prefHeight="25.0" prefWidth="100.0" text="Waffles" />
+            <Button layoutX="468.0" layoutY="385.0" mnemonicParsing="false" onAction="#frenchToast" prefHeight="25.0" prefWidth="100.0" text="French Toast" />
+            <Button layoutX="466.0" layoutY="421.0" mnemonicParsing="false" onAction="#scrambledEggs" prefHeight="25.0" prefWidth="100.0" text="Scrambled Eggs">
+               <font>
+                  <Font size="11.5" />
+               </font>
+            </Button>
+            <Button layoutX="595.0" layoutY="242.0" mnemonicParsing="false" onAction="#chocolateCake" prefHeight="25.0" prefWidth="100.0" text="Chocolate Cake" />
+            <Button layoutX="596.0" layoutY="275.0" mnemonicParsing="false" onAction="#assortedVegs" prefHeight="25.0" prefWidth="100.0" text="Assorted Vegs" />
+            <Button layoutX="596.0" layoutY="310.0" mnemonicParsing="false" onAction="#bakedBeans" prefHeight="25.0" prefWidth="100.0" text="Baked Beans" />
+            <Button layoutX="596.0" layoutY="347.0" mnemonicParsing="false" onAction="#onionFries" prefHeight="25.0" prefWidth="100.0" text="Onions &amp; Fries" />
+            <Button layoutX="596.0" layoutY="385.0" mnemonicParsing="false" onAction="#omelllete" prefHeight="25.0" prefWidth="100.0" text="Omellete" />
+            <Button layoutX="594.0" layoutY="421.0" mnemonicParsing="false" onAction="#fruitSala" prefHeight="25.0" prefWidth="100.0" text="Fruit Salad" />
+            <Button layoutX="754.0" layoutY="242.0" mnemonicParsing="false" onAction="#chefSoup" prefHeight="25.0" prefWidth="114.0" text="Chef's Soup" />
+            <Button layoutX="755.0" layoutY="276.0" mnemonicParsing="false" onAction="#wraps" prefHeight="25.0" prefWidth="114.0" text="Wraps ( V &amp; NV)" />
+            <Button layoutX="755.0" layoutY="311.0" mnemonicParsing="false" onAction="#chips" prefHeight="25.0" prefWidth="114.0" text="Plain Chips" />
+            <Button layoutX="755.0" layoutY="348.0" mnemonicParsing="false" onAction="#VegPizza" prefHeight="25.0" prefWidth="114.0" text="Veg Pizza" />
+            <Button layoutX="755.0" layoutY="386.0" mnemonicParsing="false" onAction="#chickenPizza" prefHeight="25.0" prefWidth="114.0" text="Chicken Pizza" />
+            <Button layoutX="753.0" layoutY="420.0" mnemonicParsing="false" onAction="#fish" prefHeight="25.0" prefWidth="114.0" text="Fish" />
+            <Button layoutX="877.0" layoutY="241.0" mnemonicParsing="false" onAction="#burgers" prefWidth="114.0" text="Burgers( V &amp; NV)" />
+            <Button layoutX="878.0" layoutY="275.0" mnemonicParsing="false" onAction="#quiche" prefWidth="114.0" text="Quiche ( V &amp; NV)" />
+            <Button layoutX="878.0" layoutY="310.0" mnemonicParsing="false" onAction="#garlci_bread" prefHeight="25.0" prefWidth="114.0" text="Garlic Bread" />
+            <Button layoutX="878.0" layoutY="347.0" mnemonicParsing="false" onAction="#veg_pilau" prefHeight="25.0" prefWidth="114.0" text="Veg Pilau" />
+            <Button layoutX="877.0" layoutY="385.0" mnemonicParsing="false" onAction="#mutton_beefRice" prefHeight="26.0" prefWidth="114.0" text="Mutton/ Beef Rice">
+               <font>
+                  <Font size="11.5" />
+               </font>
+            </Button>
+            <Button layoutX="876.0" layoutY="421.0" mnemonicParsing="false" onAction="#salad_dip" prefWidth="114.0" text="Fresh Salad &amp; Dips">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="999.0" layoutY="241.0" mnemonicParsing="false" onAction="#ugali" prefHeight="25.0" prefWidth="114.0" text="Ugali" />
+            <Button layoutX="999.0" layoutY="277.0" mnemonicParsing="false" onAction="#sukuma" prefWidth="114.0" text="Sukuma " />
+            <Button layoutX="999.0" layoutY="312.0" mnemonicParsing="false" onAction="#githeri" prefHeight="25.0" prefWidth="114.0" text="Githeri" />
+            <Button layoutX="999.0" layoutY="349.0" mnemonicParsing="false" onAction="#veg_pasta" prefWidth="114.0" text="Veg Pasta" />
+            <Button layoutX="999.0" layoutY="387.0" mnemonicParsing="false" onAction="#chapati" prefHeight="25.0" prefWidth="114.0" text="Chapati" />
+            <Button layoutX="999.0" layoutY="423.0" mnemonicParsing="false" onAction="#paneerCurry" prefWidth="114.0" text="Panner Curry" />
+            <Button layoutX="999.0" layoutY="491.0" mnemonicParsing="false" onAction="#fried_noodles" prefWidth="114.0" text="Fried Noodles" />
+            <Button layoutX="1259.0" layoutY="312.0" mnemonicParsing="false" onAction="#fruitPudding" prefWidth="100.0" text="Fruit Pudding" />
+            <Button layoutX="1259.0" layoutY="346.0" mnemonicParsing="false" onAction="#jalebi" prefHeight="25.0" prefWidth="100.0" text="Jalebi" />
+            <Button layoutX="1259.0" layoutY="382.0" mnemonicParsing="false" onAction="#assortedBiscuits" prefHeight="25.0" prefWidth="100.0" text="Assorted Biscuits">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Label layoutX="1203.0" layoutY="532.0" text="Time" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="152.0" layoutY="508.0" mnemonicParsing="false" onAction="#printRestaurant" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #15c520;" text="Print" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="757.0" layoutY="645.0" mnemonicParsing="false" onAction="#genRestaurant" prefHeight="37.0" prefWidth="173.0" style="-fx-background-color: #15c520;" text="Generate Order" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="467.0" layoutY="452.0" mnemonicParsing="false" onAction="#oatmeal" prefHeight="25.0" prefWidth="100.0" text="Oatmeal" />
+            <Button layoutX="467.0" layoutY="488.0" mnemonicParsing="false" onAction="#brownBread" prefHeight="25.0" prefWidth="100.0" text="Brown Bread" />
+            <Button layoutX="594.0" layoutY="452.0" mnemonicParsing="false" onAction="#bagels" prefHeight="25.0" prefWidth="100.0" text="Bagels" />
+            <Button layoutX="595.0" layoutY="488.0" mnemonicParsing="false" onAction="#assortedPies" prefHeight="25.0" prefWidth="100.0" text="Assorted Pies" />
+            <Button layoutX="754.0" layoutY="453.0" mnemonicParsing="false" onAction="#chicken" prefHeight="25.0" prefWidth="114.0" text="Chicken" />
+            <Button layoutX="752.0" layoutY="489.0" mnemonicParsing="false" onAction="#steak_pork" prefHeight="25.0" prefWidth="114.0" text="Steak or Pork" />
+            <Button layoutX="876.0" layoutY="453.0" mnemonicParsing="false" onAction="#masala_chips" prefHeight="25.0" prefWidth="114.0" text="Masala Chips" />
+            <Button layoutX="876.0" layoutY="489.0" mnemonicParsing="false" onAction="#sandwich" prefWidth="114.0" text="Sandwich( V&amp;NV)">
+               <font>
+                  <Font size="11.5" />
+               </font>
+            </Button>
+            <Button layoutX="999.0" layoutY="456.0" mnemonicParsing="false" onAction="#mukimo" prefHeight="25.0" prefWidth="114.0" text="Mukimo" />
+            <Button layoutX="1261.0" layoutY="488.0" mnemonicParsing="false" onAction="#mandazi" prefHeight="25.0" prefWidth="100.0" text="Mandazi" />
+            <ImageView fitHeight="254.0" fitWidth="275.0" layoutX="27.0" layoutY="-36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Restaurant/src/restaurant/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1168.0" layoutY="216.0" prefHeight="25.0" prefWidth="118.0" text="Dessert" underline="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="1256.0" layoutY="241.0" mnemonicParsing="false" onAction="#tiramisu" prefHeight="25.0" prefWidth="100.0" text="Tiramisu" />
+            <Button layoutX="1258.0" layoutY="278.0" mnemonicParsing="false" onAction="#jelly" prefHeight="25.0" prefWidth="100.0" text="Jelly" />
+            <Button layoutX="1143.0" layoutY="311.0" mnemonicParsing="false" onAction="#chocMuffin" prefHeight="25.0" prefWidth="100.0" text="Choc Muffin">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="1144.0" layoutY="344.0" mnemonicParsing="false" onAction="#kulfi" prefHeight="25.0" prefWidth="100.0" text="Kulfi" />
+            <Button layoutX="1144.0" layoutY="382.0" mnemonicParsing="false" onAction="#halwa" prefHeight="25.0" prefWidth="100.0" text="Halwa" />
+            <Button layoutX="1143.0" layoutY="418.0" mnemonicParsing="false" onAction="#apple_pie" prefHeight="25.0" prefWidth="100.0" text="Apple Pie" />
+            <Button layoutX="1145.0" layoutY="452.0" mnemonicParsing="false" onAction="#donut" prefHeight="25.0" prefWidth="100.0" text="Donut" />
+            <Button layoutX="1143.0" layoutY="488.0" mnemonicParsing="false" onAction="#cheese_cake" prefWidth="100.0" text="Cheese Cake" />
+            <Button layoutX="1142.0" layoutY="241.0" mnemonicParsing="false" onAction="#baguette" prefHeight="25.0" prefWidth="100.0" text="Baguette" />
+            <Button layoutX="1142.0" layoutY="278.0" mnemonicParsing="false" onAction="#cracker" prefHeight="25.0" prefWidth="100.0" text="Cracker" />
+            <Button layoutX="1259.0" layoutY="419.0" mnemonicParsing="false" onAction="#jamTarts" prefHeight="25.0" prefWidth="100.0" text="Jam Tarts" />
+            <Button layoutX="1261.0" layoutY="453.0" mnemonicParsing="false" onAction="#eclairs" prefHeight="25.0" prefWidth="100.0" text="Eclairs" />
+            <Button layoutX="474.0" layoutY="49.0" mnemonicParsing="false" onAction="#Back" prefHeight="58.0" prefWidth="190.0" style="-fx-background-color: #15c520;" text="Back" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Button>
+            <TableView layoutX="30.0" layoutY="160.0" prefHeight="184.0" prefWidth="381.0">
+               <columns>
+                  <TableColumn fx:id="restaurantID" prefWidth="100.99996948242188" text="Restaurant ID" />
+                  <TableColumn fx:id="quantity_restaurant" prefWidth="116.0" text="Quantity" />
+                  <TableColumn fx:id="amount_restaurant" prefWidth="163.0" text="Amount" />
+                  <TableColumn fx:id="itemID1" prefWidth="75.0" text="Food ID" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="473.0" layoutY="537.0" prefHeight="111.0" prefWidth="913.0">
+         <columns>
+            <TableColumn fx:id="CustomerID_restaurant" prefWidth="75.0" text="Customer ID" />
+            <TableColumn fx:id="payment_restaurant" prefWidth="169.9417724609375" text="Payement Type" />
+            <TableColumn fx:id="RestaurantAmount" prefWidth="138.0582275390625" text="Amount" />
+            <TableColumn fx:id="roomNum_restaurant" prefWidth="196.927001953125" text="Room Number" />
+            <TableColumn fx:id="date_restaurant" prefWidth="144.90740966796875" text="Date" />
+            <TableColumn fx:id="time_restaurant" prefWidth="190.12591552734375" text="Time" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
