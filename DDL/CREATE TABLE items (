@@ -1,0 +1,11 @@
+CREATE TABLE item (
+	itemID int NOT NULL,
+	itemtype varchar(45),
+	itemName varchar(250),
+	price int,
+	supplierID int,
+	
+	PRIMARY KEY (itemID),
+	FOREIGN KEY (supplierID) REFERENCES supplier(supplierID)
+
+);

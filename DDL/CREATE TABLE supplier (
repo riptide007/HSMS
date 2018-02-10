@@ -1,0 +1,9 @@
+CREATE TABLE supplier (
+	supplierID int NOT NULL,
+	supplierName varchar(45),
+	itemSupplied varchar(45),
+	price int,
+	 
+	PRIMARY KEY (supplierID)
+
+);

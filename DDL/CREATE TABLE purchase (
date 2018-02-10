@@ -1,0 +1,14 @@
+CREATE TABLE purchase (
+	purchaseID int NOT NULL,
+	guestID int,
+	itemID int,
+	itemType varchar(250),
+	time datetime,
+	date datetime,
+	quantity int,
+	status boolean, 
+	PRIMARY KEY (purchaseID),
+	FOREIGN KEY (guestID) REFERENCES guest(guestID),
+	FOREIGN KEY (itemID) REFERENCES item(itemID)
+
+);

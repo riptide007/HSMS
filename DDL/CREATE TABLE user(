@@ -1,0 +1,8 @@
+CREATE TABLE user(
+	userid int NOT NULL,
+	username varchar(45),
+	password int,
+
+	PRIMARY KEY(userid),
+
+);
