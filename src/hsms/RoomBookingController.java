@@ -11,6 +11,7 @@ import javafx.scene.layout.AnchorPane;
 
 
 public class RoomBookingController {
+    public 
      @FXML
     private AnchorPane RoomBookingInterface;
      @FXML
@@ -65,5 +66,6 @@ public class RoomBookingController {
 AnchorPane pane = FXMLLoader.load(getClass().getResource("LogIn.fxml"));
        RoomBookingInterface.getChildren().setAll(pane);
     }
+    
 
 }

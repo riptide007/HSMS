@@ -10,6 +10,15 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 public class GuestManagementController {
+    public String firstname;
+    public String lastname;
+    public String city;
+    public String town;
+    public String numofRooms;
+    public String address;
+    public String phione;
+    public String numofPeople;
+      
 
     @FXML
     private TextField phoneNumber;
