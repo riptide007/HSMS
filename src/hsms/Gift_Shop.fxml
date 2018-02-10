@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="giftshopPane" prefHeight="704.0" prefWidth="1432.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsms.Gift_ShopController">
+   <children>
+      <Button layoutX="1031.0" layoutY="59.0" mnemonicParsing="false" onAction="#Logout" prefHeight="58.0" prefWidth="190.0" style="-fx-background-color: #15c520;" text="LogOut" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="446.0" layoutY="177.0" stroke="BLACK" strokeType="INSIDE" width="934.0" />
+      <Text fill="WHITE" layoutX="772.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gift Shop">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Text>
+      <Button layoutX="160.0" layoutY="360.0" mnemonicParsing="false" onAction="#New_bar" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #15c520;" text="New" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="479.0" layoutY="252.0" mnemonicParsing="false" onAction="#elephant" prefHeight="25.0" prefWidth="100.0" text="Elephant" />
+      <Label layoutX="480.0" layoutY="218.0" text="Handcrafts (Statues)" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="477.0" layoutY="284.0" mnemonicParsing="false" onAction="#lion" prefHeight="25.0" prefWidth="100.0" text="Lion" />
+      <Button layoutX="478.0" layoutY="320.0" mnemonicParsing="false" onAction="#giraffe" prefHeight="25.0" prefWidth="100.0" text="Giraffe" />
+      <Label layoutX="780.0" layoutY="206.0" prefHeight="25.0" prefWidth="118.0" text="Travel Items" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="478.0" layoutY="357.0" mnemonicParsing="false" onAction="#buffalo" prefHeight="25.0" prefWidth="100.0" text="Buffalo" />
+      <Button layoutX="476.0" layoutY="431.0" mnemonicParsing="false" onAction="#printedShawl" prefHeight="25.0" prefWidth="100.0" text="Printed Shawl">
+         <font>
+            <Font size="11.5" />
+         </font>
+      </Button>
+      <Button layoutX="605.0" layoutY="252.0" mnemonicParsing="false" onAction="#rhino" prefHeight="25.0" prefWidth="100.0" text="Rhino" />
+      <Button layoutX="606.0" layoutY="285.0" mnemonicParsing="false" onAction="#bird" prefHeight="25.0" prefWidth="100.0" text="Bird" />
+      <Button layoutX="606.0" layoutY="320.0" mnemonicParsing="false" onAction="#crocodile" prefHeight="25.0" prefWidth="100.0" text="Crocodile" />
+      <Button layoutX="606.0" layoutY="357.0" mnemonicParsing="false" onAction="#gazelles" prefHeight="25.0" prefWidth="100.0" text="Gazelles" />
+      <Button layoutX="604.0" layoutY="431.0" mnemonicParsing="false" onAction="#printedBags" prefHeight="25.0" prefWidth="100.0" text="Printed Bags" />
+      <Button layoutX="764.0" layoutY="252.0" mnemonicParsing="false" onAction="#candles" prefHeight="25.0" prefWidth="114.0" text="Candles" />
+      <Button layoutX="765.0" layoutY="286.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="Printed Mugs" />
+      <Button layoutX="765.0" layoutY="321.0" mnemonicParsing="false" onAction="#stickers" prefHeight="25.0" prefWidth="114.0" text="Stickers" />
+      <Button layoutX="765.0" layoutY="358.0" mnemonicParsing="false" onAction="#coffeePacked" prefHeight="25.0" prefWidth="114.0" text="Packed Coffee" />
+      <Button layoutX="763.0" layoutY="430.0" mnemonicParsing="false" onAction="#Chocolate" prefHeight="25.0" prefWidth="114.0" text="Chocolate" />
+      <Button layoutX="887.0" layoutY="251.0" mnemonicParsing="false" onAction="#teaPacked" prefWidth="114.0" text="Packed Tea" />
+      <Button layoutX="888.0" layoutY="285.0" mnemonicParsing="false" onAction="#batteries" prefWidth="114.0" text="Batteries" />
+      <Button layoutX="888.0" layoutY="320.0" mnemonicParsing="false" onAction="#Postcards" prefHeight="25.0" prefWidth="114.0" text="Compass" />
+      <Button layoutX="888.0" layoutY="357.0" mnemonicParsing="false" onAction="#flashLight" prefHeight="25.0" prefWidth="114.0" text="Flash Light" />
+      <Button layoutX="886.0" layoutY="431.0" mnemonicParsing="false" onAction="#juice" prefWidth="114.0" text="Juice">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="1009.0" layoutY="251.0" mnemonicParsing="false" onAction="#flashDisk" prefHeight="25.0" prefWidth="114.0" text="Flash Disk " />
+      <Button layoutX="1009.0" layoutY="287.0" mnemonicParsing="false" onAction="#paintings" prefWidth="114.0" text="Paintings" />
+      <Button layoutX="1009.0" layoutY="322.0" mnemonicParsing="false" onAction="#airtime" prefHeight="25.0" prefWidth="114.0" text="Airtime" />
+      <Button layoutX="1009.0" layoutY="359.0" mnemonicParsing="false" onAction="#Keychains" prefWidth="114.0" text="Keychains" />
+      <Button layoutX="1009.0" layoutY="433.0" mnemonicParsing="false" onAction="#cookies" prefWidth="114.0" text="Cookies" />
+      <Button layoutX="1009.0" layoutY="501.0" mnemonicParsing="false" onAction="#nuts" prefWidth="114.0" text="Nuts" />
+      <Button layoutX="1269.0" layoutY="356.0" mnemonicParsing="false" onAction="#Cigarettes" prefHeight="25.0" prefWidth="100.0" text="Cigarettes" />
+      <Button layoutX="162.0" layoutY="518.0" mnemonicParsing="false" onAction="#print_bar" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #15c520;" text="Print" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="797.0" layoutY="662.0" mnemonicParsing="false" onAction="#genOrderBar" prefHeight="37.0" prefWidth="173.0" style="-fx-background-color: #15c520;" text="Generate Order" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="477.0" layoutY="462.0" mnemonicParsing="false" onAction="#hats" prefHeight="25.0" prefWidth="100.0" text="Hats" />
+      <Button layoutX="477.0" layoutY="498.0" mnemonicParsing="false" onAction="#bracelets" prefHeight="25.0" prefWidth="100.0" text="Bracelets" />
+      <Button layoutX="604.0" layoutY="462.0" mnemonicParsing="false" onAction="#printedCups" prefHeight="25.0" prefWidth="100.0" text="Printed Cups" />
+      <Button layoutX="605.0" layoutY="498.0" mnemonicParsing="false" onAction="#earings" prefHeight="25.0" prefWidth="100.0" text="Earings" />
+      <Button layoutX="764.0" layoutY="463.0" mnemonicParsing="false" onAction="#chrisps" prefHeight="25.0" prefWidth="114.0" text="Crisps" />
+      <Button layoutX="762.0" layoutY="499.0" mnemonicParsing="false" onAction="#water" prefHeight="25.0" prefWidth="114.0" text="Water" />
+      <Button layoutX="886.0" layoutY="463.0" mnemonicParsing="false" onAction="#gum" prefHeight="25.0" prefWidth="114.0" text="Gum" />
+      <Button layoutX="886.0" layoutY="499.0" mnemonicParsing="false" onAction="#sweets" prefWidth="114.0" text="Assorted Sweets">
+         <font>
+            <Font size="11.5" />
+         </font>
+      </Button>
+      <Button layoutX="1009.0" layoutY="466.0" mnemonicParsing="false" onAction="#soda" prefHeight="25.0" prefWidth="114.0" text="Soda" />
+      <Button layoutX="1271.0" layoutY="498.0" mnemonicParsing="false" onAction="#shampoo" prefHeight="25.0" prefWidth="100.0" text="Shampoo" />
+      <ImageView fitHeight="254.0" fitWidth="275.0" layoutX="37.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Gift_Shop/src/gift_shop/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1142.0" layoutY="218.0" prefHeight="25.0" prefWidth="290.0" text="Newspapers, Books and Postcards" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="1266.0" layoutY="251.0" mnemonicParsing="false" onAction="#Postcards" prefHeight="25.0" prefWidth="100.0" text="Postcards" />
+      <Button layoutX="1268.0" layoutY="288.0" mnemonicParsing="false" onAction="#maps" prefHeight="25.0" prefWidth="100.0" text="Maps" />
+      <Button layoutX="1154.0" layoutY="354.0" mnemonicParsing="false" onAction="#smokerPalet" prefHeight="25.0" prefWidth="100.0" text=" Smoker Palet" />
+      <Button layoutX="1153.0" layoutY="428.0" mnemonicParsing="false" onAction="#SanPads" prefHeight="25.0" prefWidth="100.0" text="Sanitary Pads" />
+      <Button layoutX="1155.0" layoutY="462.0" mnemonicParsing="false" onAction="#toothBrush" prefHeight="25.0" prefWidth="100.0" text="Tooth Brush" />
+      <Button layoutX="1153.0" layoutY="498.0" mnemonicParsing="false" onAction="#Soap" prefWidth="100.0" text="Soap" />
+      <Button layoutX="1152.0" layoutY="251.0" mnemonicParsing="false" onAction="#newsapaper" prefHeight="25.0" prefWidth="100.0" text="Newspaper" />
+      <Button layoutX="1152.0" layoutY="288.0" mnemonicParsing="false" onAction="#travelBooks" prefHeight="25.0" prefWidth="100.0" text="Travel Books" />
+      <Button layoutX="1269.0" layoutY="429.0" mnemonicParsing="false" onAction="#toiletPaper" prefHeight="25.0" prefWidth="100.0" text="Toilet Paper" />
+      <Button layoutX="1271.0" layoutY="463.0" mnemonicParsing="false" onAction="#toothPaste" prefHeight="25.0" prefWidth="100.0" text="Tooth Paste" />
+      <Label layoutX="478.0" layoutY="392.0" text="Fashion Items" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1153.0" layoutY="321.0" text="Smokers Requisites" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="1158.0" layoutY="392.0" text="Toiletries" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="766.0" layoutY="394.0" text="Confectionery" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="608.0" layoutY="56.0" mnemonicParsing="false" onAction="#Back" prefHeight="58.0" prefWidth="190.0" style="-fx-background-color: #15c520;" text="Back" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <TableView layoutX="21.0" layoutY="165.0" prefHeight="184.0" prefWidth="381.0">
+        <columns>
+          <TableColumn fx:id="itemID" prefWidth="75.0" text="Food ID" />
+          <TableColumn fx:id="quantity" prefWidth="142.0" text="Quantity" />
+            <TableColumn fx:id="amount" prefWidth="163.0" text="Amount" />
+            <TableColumn fx:id="itemID1" prefWidth="75.0" text="Food ID" />
+        </columns>
+      </TableView>
+      <TableView layoutX="463.0" layoutY="542.0" prefHeight="111.0" prefWidth="913.0">
+        <columns>
+          <TableColumn fx:id="CustomerID" prefWidth="75.0" text="Customer ID" />
+          <TableColumn fx:id="payment" prefWidth="169.9417724609375" text="Payement Type" />
+            <TableColumn fx:id="gAmount" prefWidth="138.0582275390625" text="Amount" />
+            <TableColumn fx:id="roomNum" prefWidth="196.927001953125" text="Room Number" />
+            <TableColumn fx:id="date" prefWidth="144.90740966796875" text="Date" />
+            <TableColumn fx:id="time" prefWidth="190.12591552734375" text="Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="availabilityPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsms.AvailabilityController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="19.0" layoutY="20.0" prefHeight="697.0" prefWidth="1921.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="7.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Pictures/DesignEvo-Transparent.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="17.0" layoutY="136.0" text="Arrival Date">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="291.0" layoutY="134.0" text="Departure Date">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="591.0" layoutY="137.0" text="Booking From">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TableView layoutX="82.0" layoutY="199.0" prefHeight="350.0" prefWidth="574.0">
+               <columns>
+                  <TableColumn prefWidth="142.00003051757812" text="Room No." />
+                  <TableColumn prefWidth="142.00003051757812" text="Room Type" />
+                  <TableColumn prefWidth="142.00003051757812" text="Bed Type" />
+                  <TableColumn prefWidth="142.00003051757812" text="Price per Room" />
+               </columns>
+            </TableView>
+            <Button layoutX="704.0" layoutY="210.0" mnemonicParsing="false" onAction="#checkRoom" prefHeight="34.0" prefWidth="141.0" text="Check Room" />
+            <DatePicker fx:id="bookingFrom" layoutX="704.0" layoutY="138.0" />
+            <Button layoutX="258.0" layoutY="31.0" mnemonicParsing="false" onAction="#backAvailability" prefHeight="42.0" prefWidth="166.0" style="-fx-background-color: #15c520;" text="Back" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Button>
+            <Button layoutX="616.0" layoutY="29.0" mnemonicParsing="false" onAction="#logOutAvailability" prefHeight="34.0" prefWidth="166.0" style="-fx-background-color: #15c520;" text="Logout" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="depatureDate" layoutX="425.0" layoutY="135.0" prefHeight="12.0" prefWidth="150.0" />
+            <DatePicker fx:id="arrivalDate" layoutX="123.0" layoutY="140.0" prefHeight="12.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="reportsPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsms.ReportsController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="697.0" prefWidth="1921.0">
+         <children>
+            <Button layoutX="1031.0" layoutY="59.0" mnemonicParsing="false" onAction="#LogOut" prefHeight="58.0" prefWidth="190.0" style="-fx-background-color: #15c520;" text="Logout" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="254.0" fitWidth="275.0" layoutX="37.0" layoutY="-37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Pictures/DesignEvo-Transparent.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="438.0" layoutX="51.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" width="1223.0" />
+            <Text fill="WHITE" layoutX="618.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <MenuButton alignment="CENTER" layoutX="50.0" layoutY="235.0" mnemonicParsing="false" onAction="#PDF2018" prefHeight="55.0" prefWidth="595.0" text="2018">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="JANUARY TO APRIL 2018" />
+                  <MenuItem mnemonicParsing="false" text="MAY TO AUGUST 2018" />
+                  <MenuItem mnemonicParsing="false" text="SEPTEMBER TO DECEMBER 2018" />
+               </items>
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </MenuButton>
+            <MenuButton alignment="CENTER" layoutX="662.0" layoutY="235.0" mnemonicParsing="false" onAction="#EXCEL2018" prefHeight="68.0" prefWidth="614.0" text="2018">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="JANUARY TO APRIL 2018" />
+                  <MenuItem mnemonicParsing="false" text="MAY TO AUGUST 2018" />
+                  <MenuItem mnemonicParsing="false" text="SEPTEMBER TO DECEMBER 2018" />
+               </items>
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </MenuButton>
+            <Label layoutX="166.0" layoutY="191.0" text="PDF">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="868.0" layoutY="180.0" text="EXCEL">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <MenuButton alignment="CENTER" layoutX="51.0" layoutY="334.0" mnemonicParsing="false" onAction="#PDF2017" prefHeight="55.0" prefWidth="595.0" text="2017">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="JANUARY TO APRIL 2018" />
+                  <MenuItem mnemonicParsing="false" text="MAY TO AUGUST 2018" />
+                  <MenuItem mnemonicParsing="false" text="SEPTEMBER TO DECEMBER 2018" />
+               </items>
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </MenuButton>
+            <MenuButton alignment="CENTER" layoutX="662.0" layoutY="334.0" mnemonicParsing="false" onAction="#EXCEL2017" prefHeight="68.0" prefWidth="614.0" text="2017">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="JANUARY TO APRIL 2018" />
+                  <MenuItem mnemonicParsing="false" text="MAY TO AUGUST 2018" />
+                  <MenuItem mnemonicParsing="false" text="SEPTEMBER TO DECEMBER 2018" />
+               </items>
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </MenuButton>
+            <MenuButton alignment="CENTER" layoutX="51.0" layoutY="426.0" mnemonicParsing="false" onAction="#PDF2016" prefHeight="55.0" prefWidth="595.0" text="2016">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="JANUARY TO APRIL 2018" />
+                  <MenuItem mnemonicParsing="false" text="MAY TO AUGUST 2018" />
+                  <MenuItem mnemonicParsing="false" text="SEPTEMBER TO DECEMBER 2018" />
+               </items>
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </MenuButton>
+            <MenuButton alignment="CENTER" layoutX="662.0" layoutY="426.0" mnemonicParsing="false" onAction="#EXCEL2016" prefHeight="68.0" prefWidth="614.0" text="2016">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="JANUARY TO APRIL 2018" />
+                  <MenuItem mnemonicParsing="false" text="MAY TO AUGUST 2018" />
+                  <MenuItem mnemonicParsing="false" text="SEPTEMBER TO DECEMBER 2018" />
+               </items>
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </MenuButton>
+            <MenuButton alignment="CENTER" layoutX="51.0" layoutY="516.0" mnemonicParsing="false" onAction="#PDF2015" prefHeight="55.0" prefWidth="595.0" text="2015">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="JANUARY TO APRIL 2018" />
+                  <MenuItem mnemonicParsing="false" text="MAY TO AUGUST 2018" />
+                  <MenuItem mnemonicParsing="false" text="SEPTEMBER TO DECEMBER 2018" />
+               </items>
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </MenuButton>
+            <MenuButton alignment="CENTER" layoutX="660.0" layoutY="516.0" mnemonicParsing="false" onAction="#EXCEL2015" prefHeight="68.0" prefWidth="614.0" text="2015">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="JANUARY TO APRIL 2018" />
+                  <MenuItem mnemonicParsing="false" text="MAY TO AUGUST 2018" />
+                  <MenuItem mnemonicParsing="false" text="SEPTEMBER TO DECEMBER 2018" />
+               </items>
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </MenuButton>
+            <Button layoutX="327.0" layoutY="57.0" mnemonicParsing="false" onAction="#Back_Reports" prefHeight="58.0" prefWidth="190.0" style="-fx-background-color: #15c520;" text="Back" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
