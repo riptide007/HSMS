@@ -1,0 +1,13 @@
+CREATE TABLE room (
+	roomID int NOT NULL,
+	roomNumber int,
+	guestID int,
+	description varchar(250),
+	timeIN datetime,
+	timeOut datetime,
+	pricepernight int,
+	status boolean, 
+	PRIMARY KEY (roomID),
+	FOREIGN KEY (guestID) REFERENCES guest(guestID)
+
+);

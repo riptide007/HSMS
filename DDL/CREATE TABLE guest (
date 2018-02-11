@@ -1,0 +1,9 @@
+CREATE TABLE guest (
+	guestID int NOT NULL,
+	fname varchar(45),
+	lname varchar(45),
+	address int,
+	paymentdetails int, 
+	PRIMARY KEY (guestID)
+
+);
