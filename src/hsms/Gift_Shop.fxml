@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="giftshopPane" prefHeight="704.0" prefWidth="1432.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsms.Gift_ShopController">
+<AnchorPane id="AnchorPane" fx:id="giftshopPane" prefHeight="704.0" prefWidth="1466.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsms.Gift_ShopController">
    <children>
       <Button layoutX="1031.0" layoutY="59.0" mnemonicParsing="false" onAction="#Logout" prefHeight="58.0" prefWidth="190.0" style="-fx-background-color: #15c520;" text="LogOut" textFill="#f8f8f8">
          <font>
@@ -37,7 +38,7 @@
       </Label>
       <Button layoutX="477.0" layoutY="284.0" mnemonicParsing="false" onAction="#lion" prefHeight="25.0" prefWidth="100.0" text="Lion" />
       <Button layoutX="478.0" layoutY="320.0" mnemonicParsing="false" onAction="#giraffe" prefHeight="25.0" prefWidth="100.0" text="Giraffe" />
-      <Label layoutX="780.0" layoutY="206.0" prefHeight="25.0" prefWidth="118.0" text="Travel Items" underline="true">
+      <Label layoutX="780.0" layoutY="217.0" prefHeight="25.0" prefWidth="118.0" text="Travel Items" underline="true">
          <font>
             <Font size="16.0" />
          </font>
@@ -100,10 +101,10 @@
       <Button layoutX="1271.0" layoutY="498.0" mnemonicParsing="false" onAction="#shampoo" prefHeight="25.0" prefWidth="100.0" text="Shampoo" />
       <ImageView fitHeight="254.0" fitWidth="275.0" layoutX="37.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Gift_Shop/src/gift_shop/logo.png" />
+            <Image url="@Pictures/DesignEvo-Transparent.png" />
          </image>
       </ImageView>
-      <Label layoutX="1142.0" layoutY="218.0" prefHeight="25.0" prefWidth="290.0" text="Newspapers, Books and Postcards" underline="true">
+      <Label layoutX="1115.0" layoutY="218.0" prefHeight="25.0" prefWidth="290.0" text="Newspapers, Books and Postcards" underline="true">
          <font>
             <Font size="16.0" />
          </font>
@@ -143,14 +144,6 @@
             <Font name="System Bold" size="28.0" />
          </font>
       </Button>
-      <TableView layoutX="21.0" layoutY="165.0" prefHeight="184.0" prefWidth="381.0">
-        <columns>
-          <TableColumn fx:id="itemID" prefWidth="75.0" text="Food ID" />
-          <TableColumn fx:id="quantity" prefWidth="142.0" text="Quantity" />
-            <TableColumn fx:id="amount" prefWidth="163.0" text="Amount" />
-            <TableColumn fx:id="itemID1" prefWidth="75.0" text="Food ID" />
-        </columns>
-      </TableView>
       <TableView layoutX="463.0" layoutY="542.0" prefHeight="111.0" prefWidth="913.0">
         <columns>
           <TableColumn fx:id="CustomerID" prefWidth="75.0" text="Customer ID" />
@@ -161,5 +154,11 @@
             <TableColumn fx:id="time" prefWidth="190.12591552734375" text="Time" />
         </columns>
       </TableView>
+      <Label layoutX="58.0" layoutY="224.0" prefHeight="17.0" prefWidth="91.0" text="Guest ID">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField layoutX="183.0" layoutY="226.0" onAction="#guestID" />
    </children>
 </AnchorPane>

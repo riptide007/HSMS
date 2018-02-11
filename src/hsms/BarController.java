@@ -5,12 +5,27 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 import javafx.scene.layout.AnchorPane;
 
 public class BarController {
 
     @FXML
     private AnchorPane BarOrder;
+     @FXML
+    private TableColumn<?, ?> ItemID;
+
+    @FXML
+    private TableColumn<?, ?> Amount;
+
+    @FXML
+    private TableColumn<?, ?> price;
+
+    @FXML
+    private TableColumn<?, ?> date;
+
+    @FXML
+    private TableColumn<?, ?> time;
 
     
     @FXML
