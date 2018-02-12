@@ -1,6 +1,7 @@
 package hsms;
 
 import java.io.IOException;
+import java.sql.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,17 +9,18 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import hsms.database.DbConnection;
 
 public class GuestManagementController {
     public String firstname;
     public String lastname;
-    public String city;
-    public String town;
+    public String citi;
+    public String towns;
     public String numofRooms;
-    public String address;
-    public String phione;
+    public String adress;
+    public String phone;
     public String numofPeople;
-      
+    public Connection connect;
 
     @FXML
     private TextField phoneNumber;
@@ -69,6 +71,11 @@ public class GuestManagementController {
 
     @FXML
     void saveGuestManagement(ActionEvent event) {
+       connect=DbConnection.getconnection();
+       
+      
+       
+       
 
     }
     

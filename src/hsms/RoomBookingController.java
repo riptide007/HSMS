@@ -1,6 +1,12 @@
 package hsms;
 
+import hsms.database.DbConnection;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +17,13 @@ import javafx.scene.layout.AnchorPane;
 
 
 public class RoomBookingController {
-    public 
+    public int roomid;
+    public String roontype;
+    public String guestId;
+    public String guestname;
+    
+  
+    
      @FXML
     private AnchorPane RoomBookingInterface;
      @FXML
@@ -26,9 +38,11 @@ public class RoomBookingController {
     private Label roomID;
     @FXML
     private TextField guestID;
-    
-
-    @FXML
+    private Object stmt;
+ public RoomBookingController() throws SQLException {
+     
+ }
+      @FXML
     void cancel_roomBooking(ActionEvent event) {
     
     }
@@ -67,5 +81,18 @@ AnchorPane pane = FXMLLoader.load(getClass().getResource("LogIn.fxml"));
        RoomBookingInterface.getChildren().setAll(pane);
     }
     
+   
+        //Connection connect = DbConnection.getconnection();
+        //Statement state = connect.createStatement();
+        //String strSelect = "select roomID from room";
+        // System.out.println("The SQL query is: " + strSelect);  // Echo For debugging
+        // ResultSet rset = state.executeQuery(strSelect);
+        // while(rset.next()) {   // Move the cursor to the next row
+         //   System.out.println(rset.getInt("roomID"));
+         //}
+   
 
-}
+  
+    
+
+

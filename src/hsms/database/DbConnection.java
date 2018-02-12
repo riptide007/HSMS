@@ -14,17 +14,17 @@ public class DbConnection {
           //Get connection to database
           Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotelsales?zeroDateTimeBehavior=convertToNull","root","flashdisk");
           // Create a statement
-          Statement myStatement= myConn.createStatement();
+        //  Statement myStatement= myConn.createStatement();
           //Execute SQL QUery
-          ResultSet myRs= myStatement.executeQuery("select* from hotelsales.user");
+          //ResultSet myRs= myStatement.executeQuery("select* from hotelsales.user");
           //Process the result set
-          while(myRs.next()){
-              System.out.println(myRs.getString("username")+","+ myRs.getString("password"));
-             }
+          //while(myRs.next()){
+            //  System.out.println(myRs.getString("username")+","+ myRs.getString("password"));
+             //}
            }
-      catch(Exception e){
+      catch(SQLException e){
           
-          e.printStackTrace();
+        //  e.printStackTrace();
       }
         return null;
     }
