@@ -10,6 +10,7 @@ import javafx.scene.layout.AnchorPane;
 
 public class LogIn_ReceptionistController {
 
+
     @FXML
     private AnchorPane ReceptionsPane;
 

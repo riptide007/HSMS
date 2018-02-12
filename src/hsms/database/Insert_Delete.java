@@ -2,12 +2,13 @@
 package hsms.database;
 
 import java.sql.*;
+import hsms.database.*;
 public class Insert_Delete {
     public static void main(String[] args) {
         
       try (
          
-         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotelsales?zeroDateTimeBehavior=convertToNull","root","flashdisk");
+         Connection conn = DbConnection.getconnection();
          Statement stmt = conn.createStatement();
       ) {
          
@@ -59,7 +60,7 @@ public class Insert_Delete {
                     + rset.getInt("Payementdetails"));
          }
       } catch(SQLException ex) {
-         ex.printStackTrace();
+       //  ex.printStackTrace();
       }
       // Step 5: Close the resources - Done automatically by try-with-resources
    }

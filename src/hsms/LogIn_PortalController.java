@@ -27,7 +27,7 @@ public class LogIn_PortalController {
     public Connection connect;
 
     @FXML
-    public void AdminLogIn() throws Exception {
+    public void AdminLogIn() throws Exception {//where is the log in button action event.
      connect = DbConnection.getconnection();
     String sql_query = "select * from hotelsales.user where username='"
             +username_admin.getText()+ "' and password='"+ password_admin.getText()+ "'";
