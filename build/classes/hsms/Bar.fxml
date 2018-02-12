@@ -2,6 +2,9 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -26,55 +29,11 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="81.0" layoutY="370.0" mnemonicParsing="false" onAction="#Print" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #15c520;" text="Print" textFill="#f8f8f8">
+      <Button layoutX="81.0" layoutY="481.0" mnemonicParsing="false" onAction="#Print" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #15c520;" text="Print" textFill="#f8f8f8">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="27.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" width="415.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="64.0" layoutX="28.0" layoutY="224.0" stroke="BLACK" strokeType="INSIDE" width="414.0" />
-      <Label layoutX="53.0" layoutY="197.0" prefWidth="108.0" text="Food ID" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="174.0" layoutY="197.0" prefWidth="108.0" text="Quantity" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="346.0" layoutY="197.0" prefWidth="108.0" text="Amount" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="32.0" layoutX="459.0" layoutY="553.0" stroke="BLACK" strokeType="INSIDE" width="902.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="64.0" layoutX="459.0" layoutY="584.0" stroke="BLACK" strokeType="INSIDE" width="902.0" />
-      <Label layoutX="481.0" layoutY="553.0" text="Customer ID" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="605.0" layoutY="553.0" text="Payment Type" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="1079.0" layoutY="552.0" text="Date" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="1223.0" layoutY="552.0" text="Time" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="763.0" layoutY="553.0" text="Amount" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
       <Button layoutX="777.0" layoutY="659.0" mnemonicParsing="false" onAction="#generateOrderBar" prefHeight="37.0" prefWidth="173.0" style="-fx-background-color: #15c520;" text="Generate Order" textFill="#f8f8f8">
          <font>
             <Font name="System Bold" size="16.0" />
@@ -91,11 +50,6 @@
             <Font name="System Bold Italic" size="27.0" />
          </font>
       </Text>
-      <Label layoutX="888.0" layoutY="552.0" text="Room Number" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
       <Text fill="#b51f1f" layoutX="632.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Milkshakes">
          <font>
             <Font name="System Bold Italic" size="27.0" />
@@ -168,5 +122,20 @@
             <Font name="System Bold" size="28.0" />
          </font>
       </Button>
+      <Label layoutX="68.0" layoutY="234.0" prefHeight="17.0" prefWidth="91.0" text="Guest ID">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField layoutX="193.0" layoutY="236.0" onAction="#guestID" />
+      <TableView fx:id="Bar_table" layoutX="473.0" layoutY="552.0" prefHeight="111.0" prefWidth="758.0">
+         <columns>
+            <TableColumn fx:id="ItemID" prefWidth="75.0" text="Item ID" />
+            <TableColumn fx:id="Amount" prefWidth="138.0582275390625" text="Amount" />
+            <TableColumn fx:id="price" prefWidth="196.927001953125" text="Price" />
+            <TableColumn fx:id="date" prefWidth="144.90740966796875" text="Date" />
+            <TableColumn fx:id="time" prefWidth="190.12591552734375" text="Time" />
+         </columns>
+      </TableView>
    </children>
 </AnchorPane>

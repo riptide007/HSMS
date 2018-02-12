@@ -8,11 +8,15 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+<<<<<<< HEAD
 <<<<<<< master
     <jar href="HSMS.jar" size="2489144" download="eager" />
 =======
     <jar href="HSMS.jar" size="2489678" download="eager" />
 >>>>>>> local
+=======
+    <jar href="HSMS.jar" size="3288619" download="eager" />
+>>>>>>> pr/4
     <jar href="lib\eclipselink.jar" size="8478776" download="eager" />
     <jar href="lib\javax.persistence_2.1.0.v201304241213.jar" size="164637" download="eager" />
     <jar href="lib\mysql-connector-java-5.1.45-bin.jar" size="999810" download="eager" />

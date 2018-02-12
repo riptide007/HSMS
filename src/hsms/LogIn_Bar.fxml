@@ -36,8 +36,14 @@
                               <Font name="Segoe UI Bold" size="35.0" />
                            </font>
                         </Button>
-                        <PasswordField fx:id="password_bar" layoutX="165.0" layoutY="387.0" prefHeight="78.0" prefWidth="513.0" />
-                        <TextField fx:id="username_bar" layoutX="161.0" layoutY="210.0" prefHeight="67.0" prefWidth="511.0" />
+                        <PasswordField fx:id="password_bar" layoutX="165.0" layoutY="387.0" prefHeight="78.0" prefWidth="513.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font></PasswordField>
+                        <TextField fx:id="username_bar" layoutX="161.0" layoutY="210.0" prefHeight="67.0" prefWidth="511.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font></TextField>
                         <Label layoutX="160.0" layoutY="139.0" text="Username" underline="true">
                            <font>
                               <Font name="Segoe UI Bold" size="41.0" />

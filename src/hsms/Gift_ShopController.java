@@ -22,21 +22,9 @@ public class Gift_ShopController {
     void Logout(ActionEvent event) throws IOException{
         AnchorPane pane = FXMLLoader.load(getClass().getResource("LogIn.fxml"));
        giftshopPane.getChildren().setAll(pane);
+       
     }
-
-    @FXML
-    private TableColumn<?, ?> itemID;
-
-    @FXML
-    private TableColumn<?, ?> quantity;
-
-    @FXML
-    private TableColumn<?, ?> amount;
-
-    @FXML
-    private TableColumn<?, ?> itemID1;
-
-    @FXML
+      @FXML
     private TableColumn<?, ?> CustomerID;
 
     @FXML
@@ -54,6 +42,7 @@ public class Gift_ShopController {
     @FXML
     private TableColumn<?, ?> time;
 
+
     @FXML
     void Chocolate(ActionEvent event) {
 
@@ -68,6 +57,7 @@ public class Gift_ShopController {
     void Keychains(ActionEvent event) {
 
     }
+
 
     @FXML
     void New_bar(ActionEvent event) {
@@ -171,6 +161,11 @@ public class Gift_ShopController {
 
     @FXML
     void giraffe(ActionEvent event) {
+
+    }
+
+    @FXML
+    void guestID(ActionEvent event) {
 
     }
 
@@ -293,4 +288,5 @@ public class Gift_ShopController {
     void water(ActionEvent event) {
 
     }
+   
 }
